@@ -1,0 +1,5 @@
+level: 1
+score: 0
+score multiplier: 1x
+timer: 150 seconds
+bubble speed: 2.5
