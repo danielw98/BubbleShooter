@@ -4,7 +4,7 @@
 **BubbleShooter** is a captivating game with a unique twist—a rotating board and an endless number of levels for non-stop entertainment. This project leverages the SDL2 library for rendering, event handling, and audio playback, ensuring a seamless gaming experience.
 
 ## Demo animation
-![Bubble Shooter Animation](https://i.giphy.com/gw3IWyGkC0rsazTi.webp)
+![Bubble Shooter Animation](https://github.com/danielw98/BubbleShooter/blob/main/BubbleShooter.gif?raw=true)
 
 ## Features
 - **Dynamic Rotating Board:** Test your aiming skills on a board that keeps turning, adding a layer of strategy to the classic bubble shooter gameplay.
