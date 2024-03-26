@@ -35,10 +35,20 @@ make
 - **Spare Ball**: there is a spare ball in the left which you can toggle using SPACE key
 - **Score Multiplier**: there is a multiplier bar so when you hit 5 consecutive combos in a row without missing, the score you get for the next combos will be 150% of the normal score, until missing or not making a combo, and the bar resets.
 
-## Files and Architecture
+## Dive Into the Code
 
-The game's logic is spread across multiple files, with `Game.cpp` serving as the heart of the game, `LevelManager.cpp` for managing levels, and `MatchFinding.cpp` for handling bubble matching logic. Singleton classes like `TextureManager`, `SoundManager`, and `FontRenderer` are used for efficient resource management. 
-This is only a brief overview of the project files, for a deeper dive, check the `src/` and `include/` folder structures and files.
+The core of BubbleShooter is split into a more modular architecture, with key functionalities distributed across various files in `src/` for implementations and `include/` for declarations:
+
+- **Gameplay Dynamics**: `Game.cpp` orchestrates the main game loop, interactions, and state transitions, ensuring fluid gameplay.
+- **Entity Management**: `Entity.cpp` and `Bubble.cpp` define the game entities and their behaviors. `Entity.cpp` serves as a base for game entities, while `Bubble.cpp` specifically handles bubble characteristics and actions.
+- **Level Management**: `LevelManager.cpp` dynamically manages game levels, including loading and setting bubble configurations per level.
+- **Collision and Matching**: `MatchFinder.cpp` is responsible for detecting matches of bubbles and handling the game logic for clearing matched bubbles.
+- **Rendering and GUI**: `GUIManager.cpp` and `FontRenderer.cpp` manage the graphical user interface, rendering text, and other GUI elements.
+- **Audio Management**: `SoundManager.cpp` handles all game sounds, from shooting bubbles to combo sounds, enhancing the game's auditory feedback.
+
+Supporting enums in `include/enums/` and structures in `include/structs/` organize the game's configurations and states, promoting a clean and understandable codebase.
+
+Each component plays a pivotal role in bringing the dynamic and engaging gameplay experience of BubbleShooter to life. Check the contents of these files to explore the game's implementation details, from the rendering techniques to the logic behind the rotating board and bubble interactions. Assets for the game are located under `assets/`.
 
 ## Contributing
 
