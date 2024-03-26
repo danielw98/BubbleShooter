@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**BubbleShooter** is a captivating game with a unique twist—a rotating board and an endless number of levels for non-stop entertainment. This project leverages the SDL2 library for rendering, event handling, and audio playback, ensuring a pleasing gaming experience for the player.
+**BubbleShooter** is a captivating bubble shooter game with a unique twist - a rotating board and an endless number of levels but a finite timer, making it a challenge to reach the highest score possible. This project leverages the SDL2 library for rendering, event handling, and audio playback, ensuring a pleasing gaming experience for the player.
 
 ## Demo Animation
 
